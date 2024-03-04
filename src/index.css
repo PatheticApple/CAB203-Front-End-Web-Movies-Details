@@ -1,0 +1,604 @@
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav {
+  width: 100%;
+  display: inline-block;
+  text-align: left;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 5px 30px;
+  border-radius: 3px;
+  transition: 0.3s ease all;
+  padding-bottom: 10px;
+}
+
+nav ul li a:hover {
+  background: #565656;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  padding: 50px;
+  margin: 0;
+  font-family: "Century Gothic", sans-serif;
+  font-size: 80px;
+}
+
+header {
+  background: #FF4150;
+  color: #fff;
+  padding: 10px 30px;
+  /* border: #444;
+  border-width: 10px; */
+}
+
+footer {
+  background: #FF4150;
+  color: #fff;
+  padding: 2px 30px;
+  /* border: #444;
+  border-width: 10px; */
+}
+
+h3 {
+  text-align: left;
+}
+
+
+.main {
+  min-height: 780px;
+  background-image: url("Images/cinema.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  padding-top: 0px;
+}
+
+.main_content a {
+  display: inline-block;
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  padding: 5px 40px;
+  width: 10%;
+  margin: 50px;
+  text-decoration: none;
+  font-size: 25px;
+  transition: transform 0.7s;
+  padding-bottom: 10px;
+}
+
+.main_content a:hover {
+  background-color: transparent;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+
+}
+
+
+
+.LoginMain {
+  min-height: 780px;
+  background-image: url("Images/cinema.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  padding-top: 0px;
+}
+
+
+.LoginForms {
+  position: relative;
+  margin: auto;
+  width: 50%;
+  max-width: 280px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.LoginForms .label {
+  position: absolute;
+  bottom: 0px;
+  left: 5px;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 500;
+  transform-origin: 0 0;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+
+.LoginForms .focus-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  background: rgba(0, 0, 0, 0.05);
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.LoginForms input {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 50%;
+  border: 0;
+  font-family: inherit;
+  padding: 16px 12px 0 12px;
+  height: 56px;
+  font-size: 20px;
+  font-weight: 400;
+  background: #FF4150;
+  box-shadow: inset 0 -1px 0 red;
+  color: white;
+  transition: all 0.15s ease;
+}
+
+.LoginForms input:hover {
+  background: rgba(193, 5, 5, 0.5);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.LoginForms input:not(:-moz-placeholder-shown)+.label {
+  color: rgba(0, 0, 0, 0.5);
+  transform: translate3d(0, -12px, 0) scale(0.75);
+}
+
+.LoginForms input:not(:-ms-input-placeholder)+.label {
+  color: rgba(0, 0, 0, 0.5);
+  transform: translate3d(0, -12px, 0) scale(0.75);
+}
+
+.LoginForms input:not(:placeholder-shown)+.label {
+  color:  rgba(255, 255, 255, 0.5);
+  transform: translate3d(6px, -15px, 0) scale(0.6);
+}
+
+.LoginForms input:focus {
+  background: rgba(0, 0, 0, 0.05);
+  outline: none;
+  box-shadow: inset 0 -2px 0 #FF4150;
+}
+
+.LoginForms input:focus+.label {
+  color: #FF4150;
+  transform: translate3d(0, -40px, 0) scale(0.75);
+}
+
+.LoginForms input:focus+.label+.focus-bg {
+  transform: scaleX(1);
+  transition: all 0.1s ease;
+}
+
+
+.loginPageButton {
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  font-size: 30px;
+  margin: 30px 10px;
+  width: 25%;
+  padding: 10px 0;
+  box-shadow: 0 0 20px #7a0b14;
+  transition: 0.3s;
+  color: white;
+  background-color: #FF4150;
+  border: 1px solid #7a0b14;
+}
+
+.loginPageButton:hover {
+  color: white;
+  box-shadow: 0 0 20px rgba(193, 5, 5, 0.6);
+  background-color: rgb(99, 6, 6);
+}
+
+
+.RegisterMain {
+  min-height: 780px;
+  background-image: url("Images/cinema.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  padding-top: 0px;
+}
+
+
+/* Movie Page */
+
+.SearchArea {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  background-color: #191D20;
+}
+
+.MovieSection {
+  background-color: #222B30;
+  
+}
+
+
+
+.SearchBoxes {
+  width: 70%;
+  display: inline-block;
+}
+.SearchPageNo {
+  width: 30%;
+  display: inline-block;
+  text-align: right;
+}
+
+.searchBar {
+  font-size: 20px;
+  border: 3px solid #FF4150;
+  /* border-right: none; */
+  padding: 10px;
+  border-radius: 8px 8px 8px 8px;
+  outline: none;
+  color: black;
+  margin-left: 5px;
+  margin-top: 10px;
+  /* margin-bottom: 10px; */
+  box-shadow: 0 0 10px #7a0b14;
+  margin-left: 10px;
+}
+#movieString {
+  width: 60%;
+  margin-left: 50px;
+}
+#yearString {
+  width: 8%;
+}
+
+.searchBar:focus{
+  color: black;
+}
+.searchBar:hover{
+  border: 3px solid rgb(125, 5, 5);
+  background-color: #FF4150;
+  color: white;
+  transition: 0.5s;
+}
+
+.SearchButton {
+  cursor: pointer;
+  border: 0;
+  border-radius: 8px 8px 8px 8px;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 10%;
+  padding: 10px;
+  box-shadow: 0 0 10px #7a0b14;
+  transition: 0.3s;
+  color: white;
+  background-color: #FF4150;
+  border: 3px solid #7a0b14;
+  
+}
+
+.SearchButton:hover {
+  color: white;
+  box-shadow: 0 0 20px rgba(193, 5, 5, 0.6);
+  background-color: rgb(198, 6, 6);
+}
+
+#PrevPage  {
+  width: 10%;
+  
+}
+#NextPage  {
+  width: 10%;
+  margin-right: 50px;
+}
+
+
+.PageNumber {
+  color: white;
+  font-family: "Century Gothic", sans-serif;
+  font-size: 20px;
+  font-weight: 1000;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.TableArea {
+  padding: 30px;
+  border: 1px solid #FF4150;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+.ag-header-cell-label {
+  justify-content: center;
+}
+
+
+#MainTable {
+  --ag-foreground-color: white;
+  --ag-background-color: 191D20;
+  --ag-header-foreground-color: white;
+  --ag-header-background-color: #FF4150;
+  --ag-odd-row-background-color: #6611182b;
+  --ag-header-column-resize-handle-color: rgb(81, 10, 19);
+  --ag-font-size: 17px;
+  --ag-font-family: "Century Gothic", sans-serif;
+  --ag-borders: solid 3px;
+  --ag-border-color: #7a0b14 ;
+  --ag-cell-horizontal-border: solid #7a0b14 ;
+  --ag-border-radius: 4px;
+}
+
+
+/* MoviePage Section */
+
+.MovieTitle {
+  width: 100%;
+  text-align: left;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+.InfoSection {
+  display: inline-block;
+  width: 100%;
+  background-color: #191D20;
+}
+.Informations {
+  width: 60%;
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+.ImageSection {
+  width: 40%;
+  display: inline-block;
+}
+
+.Informations p {
+  color: white;
+  font-size: 20px;
+  text-align: left;
+  padding-left: 50px;
+}
+.Informations hr {
+  margin-left: 50px;
+  border: 1px solid white ;
+}
+
+.ImageSection img {
+  border: 2px solid white;
+  margin: 0px;
+  height: 750px;
+  margin-bottom: 10px;
+}
+.badge {
+  background-color: gray;
+  color: white;
+  padding: 3px 8px;
+  text-align: center;
+  border-radius: 9px;
+  font-weight: bold;
+}
+
+.CastTableSection {
+  width: 100%;
+  padding-left: 50px;
+  padding-bottom: 10px;
+}
+
+#castTable {
+  --ag-foreground-color: white;
+  --ag-background-color: 191D20;
+  --ag-header-foreground-color: white;
+  --ag-header-background-color: none;
+  --ag-odd-row-background-color: #6611182b;
+  --ag-header-column-resize-handle-color: rgb(81, 10, 19);
+  --ag-font-size: 14px;
+  --ag-font-family: "Century Gothic", sans-serif;
+  --ag-borders: solid 3px;
+  --ag-border-color: white ;
+  --ag-cell-horizontal-border: solid white ;
+  --ag-border-radius: 4px;
+}
+
+.RatingArea {
+  padding-bottom: 30px;
+}
+.RatingArea p {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  
+}
+.RatingArea h2 {
+  color: white;
+  font-family: "Century Gothic", sans-serif;
+  text-align: center;
+}
+
+.EachRating {
+  display: inline-block;
+  margin: 10px;
+}
+
+.badge2 {
+  background-color: gray;
+  color: white;
+  padding: 3px 8px;
+  text-align: right;
+  border-radius: 9px;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+/* PeoplePage Section */
+
+
+.personInformations {
+  width: 60%;
+  display: inline-block
+}
+
+.NameTitle {
+  text-align: left;
+  padding-bottom: 0;
+  padding-top: 10px;
+}
+
+#personTable {
+  --ag-foreground-color: white;
+  --ag-background-color: 191D20;
+  --ag-header-foreground-color: white;
+  --ag-header-background-color: none;
+  --ag-odd-row-background-color: #6611182b;
+  --ag-header-column-resize-handle-color: rgb(81, 10, 19);
+  --ag-font-size: 14px;
+  --ag-font-family: "Century Gothic", sans-serif;
+  --ag-borders: solid 3px;
+  --ag-border-color: white ;
+  --ag-cell-horizontal-border: solid white ;
+  --ag-border-radius: 4px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+}
+
+.personInformations p {
+  color: white;
+  font-size: 30px;
+  text-align: left;
+  padding-left: 50px;
+}
+
+.MovieSection hr {
+  margin-left: 50px;
+  border: 1px solid white ;
+  margin-right: 50px;
+}
+
+
+
+.GraphSection {
+  width: 40%;
+  display: inline-block;
+  text-align: right;
+}
+
+.GraphSection p {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+.GraphSection hr {
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.chart-container {
+  position: absolute;
+  height: 480px;
+  width: 38%;
+}
+
+canvas {
+  padding-top: 10px;
+  border: 2px solid white;
+}
+
+
+
+
+/* Login Section */
+
+.ErrorMessage {
+  color: white;
+  text-align: center;
+  font-family: "Century Gothic", sans-serif;
+}
+
+.SuccessMessage {
+  text-align: center;
+  color: white;
+  padding: 50px;
+  margin: 0;
+  font-family: "Century Gothic", sans-serif;
+  font-size: 30px;
+}
+
+/* Register Section */
+
+
+.RegisterTitle{
+  font-size: 30px;
+  padding-bottom: 0px;
+}
+
+.ErrorMessageRegister {
+  color: white;
+  text-align: center;
+  font-family: "Century Gothic", sans-serif;
+}
+
+.ErrorRegisterPass p {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.ErrorMessageMovie {
+  color: yellow;
+  text-align: left;
+  font-family: "Century Gothic", sans-serif;
+  padding-left: 50px;
+  margin-top: -10px;
+}
+
+.ShowingResults {
+  color: white;
+  text-align: left;
+  margin-top: -15px;
+  padding-left: 10px;
+  font-family: "Century Gothic", sans-serif;
+}
+
+.footerText {
+  font-size: 10px;
+}
